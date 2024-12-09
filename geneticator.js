@@ -27,7 +27,7 @@ const proteinTable = {
 	UAC: "Tyrosine",
 	UAA: "STOP",
 	UAG: "STOP",
-	
+
 	UGU: "Cystein",
 	UGC: "Cystein",
 	UGA: "STOP",
@@ -171,7 +171,7 @@ switch (type) {
 	} case (2): {
 		mRNA_Strand = JSON.parse(JSON.stringify(strand));
 		codingStrand = convertNA(JSON.parse(JSON.stringify(strand)));
-		templateStrand = reverseOrder(reverseStrand(JSON.parse(JSON.stringify(templateStrand))));
+		templateStrand = reverseOrder(reverseStrand(JSON.parse(JSON.stringify(codingStrand))));
 	}
 }
 
